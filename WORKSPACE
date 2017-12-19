@@ -17,7 +17,7 @@ go_register_toolchains()
 # "golang.org/x/crypto/openpgp"
 go_repository(
     name = "org_golang_x_crypto",
-    commit = "847319b7fc94cab682988f93da778204da164588",
+    commit = "d585fd2cc9195196078f516b69daff6744ef5e84",
     importpath = "golang.org/x/crypto",
 )
 
