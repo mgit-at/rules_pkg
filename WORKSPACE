@@ -86,23 +86,23 @@ deb_packages(
     mirrors = [
         "http://deb.debian.org/debian",
         # This ensures old states of this repository will build as long as the snapshot mirror works:
-        "http://snapshot.debian.org/archive/debian/20170821T035341Z",
+        "http://snapshot.debian.org/archive/debian/20171219T131415Z",
     ],
     packages = {
         "ca-certificates": "pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3_all.deb",
         "libc6": "pool/main/g/glibc/libc6_2.19-18+deb8u10_amd64.deb",
-        "libssl1.0.0": "pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u6_amd64.deb",
+        "libssl1.0.0": "pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u7_amd64.deb",
         "netbase": "pool/main/n/netbase/netbase_5.3_all.deb",
-        "openssl": "pool/main/o/openssl/openssl_1.0.1t-1+deb8u6_amd64.deb",
-        "tzdata": "pool/main/t/tzdata/tzdata_2017b-0+deb8u1_all.deb",
+        "openssl": "pool/main/o/openssl/openssl_1.0.1t-1+deb8u7_amd64.deb",
+        "tzdata": "pool/main/t/tzdata/tzdata_2017c-0+deb8u1_all.deb",
     },
     packages_sha256 = {
         "ca-certificates": "bd799f47f5ae3260b6402b1fe19fe2c37f2f4125afcd19327bf69a9cf436aeff",
         "libc6": "0a95ee1c5bff7f73c1279b2b78f32d40da9025a76f93cb67c03f2867a7133e61",
-        "libssl1.0.0": "0fc777d9242fd93851eb49c4aafd22505048b7797c0178f20c909ff918320619",
+        "libssl1.0.0": "d99de2cdca54484d23badc5683c7211b3a191977272d9e5281837af863dcdd56",
         "netbase": "3979bdd40c5666ef9bf71a5391ba01ad38e264f2ec96d289993f2a0805616dd3",
-        "openssl": "41613658b4e93ffaa7de25060a4a1ab2f8dfa1ee15ed90aeac850a9bf5a134bb",
-        "tzdata": "4d754d06cf94b3991f333d076461efe7f8e905462be9663b4b616fd75233c09d",
+        "openssl": "d0e1464148bb2d682ccdb6f433b27a6848e4d012e8bb8a61ed9f6ad708017640",
+        "tzdata": "f53b963b533100380127a20922b4265412ca4cf8f8b21c66e07c4645b7845002",
     },
     pgp_key = "jessie_archive_key",
 )
