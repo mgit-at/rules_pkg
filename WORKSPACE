@@ -48,6 +48,36 @@ http_file(
     urls = ["https://ftp-master.debian.org/keys/archive-key-8.asc"],
 )
 
+# The Debian jessie security archive signing key
+# Source: https://ftp-master.debian.org/keys.html
+# Full fingerprint: D211 6914 1CEC D440 F2EB 8DDA 9D6D 8F6B C857 C906
+http_file(
+    name = "jessie_security_archive_key",
+    # It is highly recommended to use the sha256 hash of the key file to make sure it is untampered
+    sha256 = "d05815c66deb71a595279b750aaf06370b6ad8c3b373651473c1c4b3d7da8f3c",
+    urls = ["https://ftp-master.debian.org/keys/archive-key-8-security.asc"],
+)
+
+# The Debian stretch archive signing key
+# Source: https://ftp-master.debian.org/keys.html
+# Full fingerprint: E1CF 20DD FFE4 B89E 8026 58F1 E0B1 1894 F66A EC98
+http_file(
+    name = "stretch_archive_key",
+    # It is highly recommended to use the sha256 hash of the key file to make sure it is untampered
+    sha256 = "33b6a997460e177804cc44c7049a19350c11034719219390b22887471f0a2b5e",
+    urls = ["https://ftp-master.debian.org/keys/archive-key-9.asc"],
+)
+
+# The Debian stretch security archive signing key
+# Source: https://ftp-master.debian.org/keys.html
+# Full fingerprint: 6ED6 F5CB 5FA6 FB2F 460A E88E EDA0 D238 8AE2 2BA9
+http_file(
+    name = "stretch_security_archive_key",
+    # It is highly recommended to use the sha256 hash of the key file to make sure it is untampered
+    sha256 = "4adecda0885f192b82c19fde129ca9d991f937437835a058da355b352a97e7dc",
+    urls = ["https://ftp-master.debian.org/keys/archive-key-9-security.asc"],
+)
+
 deb_packages(
     name = "debian_jessie_amd64",
     arch = "amd64",
